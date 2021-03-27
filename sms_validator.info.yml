@@ -1,0 +1,7 @@
+name: 'SMS Validator'
+description: 'Congif Of SMS Validator'
+type: module
+core: 8.x
+dependencies:
+  - drupal:sms_twilio
+  - drupal:smsframework

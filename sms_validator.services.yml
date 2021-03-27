@@ -1,0 +1,4 @@
+services:
+    sms_validator.sender:
+      class: Drupal\sms_validator\Service\SmsSender
+      arguments: ['@sms.provider']

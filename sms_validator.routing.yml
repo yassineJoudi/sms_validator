@@ -1,0 +1,14 @@
+sms_validator.confirm:
+  path: '/sms-validator-confirm'
+  defaults:
+    _form: '\Drupal\sms_validator\Form\ConfirmForm'
+    _title: 'SMS Validator Confirm'
+  requirements:
+    _permission: 'access content'
+sms_validator.settings:
+  path: 'admin/config/smsframework/sms-validator'
+  defaults:
+    _form: '\Drupal\sms_validator\Form\Settings'
+    _title: 'SMS Validator Settings'
+  requirements:
+    _permission: 'access content'

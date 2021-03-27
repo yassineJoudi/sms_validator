@@ -1,0 +1,7 @@
+
+sms_validator.admin:
+  title: 'SMS Validator'
+  description: 'Gestion Configurations SMS Validator'
+  parent: sms.admin
+  route_name: sms_validator.settings
+  weight: -100
