@@ -25,6 +25,7 @@ GO to admin/config/smsframework/sms-validator to setup sms_validator (time expir
 in your custom submit add:
     $data = \Drupal::service('sms_validator.sender')->codeGenerate()
 to generate new code, and also add these lines to send the code at the phone number and redirect to a confirmation page:
+
     \Drupal::service('sms_validator.sender')->messagePrepare(PHONE_NUMBER, $data['code']);
     $form_state->setRedirectUrl(Url::fromRoute("sms_validator.confirm", ["query" => ["code" => base64_encode($data['code']), "time" => base64_encode($data['time']), "userId" => \Drupal::currentUser()->id()]]));
         
